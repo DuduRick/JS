@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <label for="itext">Em que pais você nasceu ?</label>
+    <input type="text" id="itext" required>
+
+   <input type="submit" value="Enviar" onclick="conferir()">
+
+   <p id="res"></p>
+
+    <script>
+        function conferir(){
+            var acesso = window.document.querySelector('input#itext')
+            var pais = acesso.value
+            var res = window.document.querySelector('p#res')
+            if ( pais == 'Brasil'){
+                res.innerHTML = `Você nasceu no ${pais} e é BRASILEIRO`
+            }else{
+                res.innerHTML = `Você nasceu no(a) ${pais} e é ESTRANGEIRO`
+            }
+    
+        }
+    </script>
+</body>
+</html>
