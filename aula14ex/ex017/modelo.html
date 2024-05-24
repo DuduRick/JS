@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <main>
+        <form>
+
+            <p>
+                <label for="numberstart">Inicio:</label>
+                <input type="number" id="numberstart">
+            </p>
+
+            <p>
+                <label for="numberend">Fim:</label>
+                <input type="number" id="numberend">
+            </p>
+
+            <p>
+                <label for="numberstep">Passo:</label>
+                <input type="number" id="numberstep">
+            </p>
+
+            <input type="button" value="Contar" onclick="contar()">
+
+            <input type="reset" value="limpar">
+
+
+        </form>
+
+        <p id="msg">Preparando a contagem...
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
