@@ -11,8 +11,8 @@ function contar(){
 
     msg.innerHTML = 'Contando:'
 
-    for ( Nstart; Nend; Nstep){
-        console.log(`${Nstart}`)
+    for ( var c = Nstart; c = Nend; c = Nstep){
+        msg.innerHTML += `${c}`
     }
 
 
