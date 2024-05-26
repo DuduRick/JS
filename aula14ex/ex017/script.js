@@ -13,6 +13,9 @@ function contar(){
 
     for ( var c = Nstart; c = Nend; c = Nstep){
         msg.innerHTML += `${c}`
+        if (Nend >= Nstart){
+            alert('[ERRO]...Números inválidos')
+        }
     }
 
 
