@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabuada</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
@@ -12,13 +13,23 @@
 
     <main>
 
-        <label for="number">Número:</label>
-        <input type="number" id="num
-        mber">
+        <form>
 
-        <input type="button" value="Gerar tabuada">
+            <label for="inumber">Número:</label>
+            <input type="number" id="inumber" >
 
-        <p><select name="" id="iselect"></select></p>
+            <input type="button" value="Gerar tabuada" onclick="calc()">
+
+            <input type="reset" value="Limpar" onclick="clear()">
+
+            <p>
+                <select id="iselect" size="10"></select>
+            </p>
+            
+            
+        </form>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

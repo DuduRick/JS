@@ -9,14 +9,18 @@ function contar(){
     var Nend = Number(end.value)
     var Nstep = Number(step.value)
 
-    msg.innerHTML = 'Contando:'
+    if ( start.value.length == 0 || end.value.length == 0 || step.value.length == 0){
+        alert('[ERRO]...Dados inválidos ')}
 
-    for ( var c = Nstart; c = Nend; c = Nstep){
-        msg.innerHTML += `${c}`
-        if (Nend >= Nstart){
-            alert('[ERRO]...Números inválidos')
+    else if ( Nstart >= Nend){
+        alert('[ERRO]...Números inválidos')
+    }
+    else{
+        msg.innerHTML = 'Contando: '
+        while ( Nstart <= Nend){
+            msg.innerHTML += `${Nstart}  `
+            Nstart += Nstep
         }
     }
-
 
 }
